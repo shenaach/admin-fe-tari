@@ -1,0 +1,160 @@
+.datatable {
+    height: 600px;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+
+    .top {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .searchFilters {
+            display: flex;
+            align-items: center;
+            border: 0.5px solid lightgray;
+            padding: 3px;
+            // display: flex;
+            // align-items: flex-end;
+            // flex-wrap: wrap;
+            // gap: 10px;
+
+            .filter-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 0.9rem;
+                margin: 10px;
+
+
+                .filter-title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2px;
+
+                    svg {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .reset {
+                    color: #F8545E;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #F8545E;
+                    }
+
+                }
+            }
+
+            .search {
+                margin-left: 10px;
+                display: flex;
+                align-items: center;
+                border: 0.5px solid lightgray;
+                border-radius: 5px;
+                padding: 3px;
+                background-color: #fff;
+                // width: 220px;
+                // display: flex;
+                // align-items: center;
+                // justify-content: space-between;
+                // border: 0.5px solid lightgray;
+                // padding: 5px;
+                // border-radius: 4px;
+
+                input {
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+
+                    &::placeholder {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .addButton {
+            padding: 5px 10px;
+            font-size: 0.9rem;
+            color: white;
+            border-radius: 5px;
+            border-style: none;
+            background-color: #F8545E;
+            font-weight: 600;
+            margin: 5px 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:hover {
+                background-color: #F8545E;
+            }
+        }
+
+
+    }
+
+    .cellWithImg {
+        display: flex;
+        align-items: center;
+
+        .cellImg {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+    }
+
+    .cellWithStatus {
+        padding: 5px;
+        border-radius: 5px;
+
+        &.active {
+            background-color: rgba(0, 128, 0, 0.05);
+            color: #F8545E;
+        }
+
+        &.pending {
+            background-color: rgba(255, 217, 0, 0.05);
+            color: goldenrod;
+        }
+
+        &.passive {
+            background-color: rgba(255, 0, 0, 0.05);
+            color: crimson;
+        }
+    }
+
+    .cellAction {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .viewButton {
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: #2B3BC4;
+            border: 1px dotted rgba(0, 0, 139, 0.396);
+            cursor: pointer;
+        }
+
+        .deleteButton {
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: #C25193;
+            border: 1px dotted rgba(220, 20, 60, 0.415);
+            cursor: pointer;
+        }
+    }
+}

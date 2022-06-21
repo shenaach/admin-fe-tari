@@ -1,0 +1,132 @@
+.login {
+    // height: 100vh;
+    // background-color: white;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    margin: 100px auto;
+    width: 1000px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 10px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+    .form-content-left {
+        background: linear-gradient(
+          90deg,
+          rgb(255, 98, 203) 0%,
+          rgb(247, 235, 243) 100%
+        );
+        border-radius: 10px 0 0 10px;
+        position: relative;
+
+        .form-img {
+            width: 95%;
+            height: 95%;
+            border-radius: 10px;
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+
+            .form-img-2 {
+                width: 50%;
+                height: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+          }
+      }
+
+
+    .login-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid gray;
+        width: 80%;
+        padding: 3rem;
+        border: 0.5px solid white;
+        border-radius: 5px;
+
+
+        h1 {
+            margin: 5px 0;
+            color: #F8545E;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 25px;
+            padding: 30px 0;
+
+            .formInput {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-weight: 600;
+                }
+
+
+                input {
+                    margin: 5px 0 0 0;
+                    padding: 10px;
+                    outline: 0.5px solid lightgray;
+                    border-style: none;
+                    border-radius: 5px;
+
+                    &:hover {
+                        outline: 1px solid black;
+                    }
+
+                    &:focus {
+                        outline: 2px solid #F8545E;
+
+                    }
+                }
+            }
+
+            button {
+                padding: 10px;
+                font-size: 1.2rem;
+                color: white;
+                border-radius: 5px;
+                border-style: none;
+                background-color: #F8545E;
+                font-weight: 600;
+                margin: 10px 0 5px 0;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.90);
+                    background-color: #F8545E;
+                }
+
+                &:disabled {
+                    cursor: not-allowed;
+                }
+
+            }
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9rem;
+        }
+
+    }
+
+}
