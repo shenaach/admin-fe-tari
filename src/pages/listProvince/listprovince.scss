@@ -1,0 +1,19 @@
+.listProvince{
+    .info{
+        margin-left: 10px;
+        color: #F8545E;
+        .box{
+            padding: 10px;
+            color: #666;
+            background-color: rgb(255, 245, 245);
+            border-radius: 10px;
+            border: 0.9px;
+
+            .infos{
+                // list-style: none;
+                color: #666;
+                font-size: 14px;
+            }
+        }
+    }
+}

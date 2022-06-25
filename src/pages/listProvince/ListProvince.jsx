@@ -58,6 +58,17 @@ const ListProvince = () => {
 
     return (
         <div className="listProvince">
+            <div className="info">
+                <h1>Data Provinsi</h1>
+                <div className="box">
+                    <h4>Tata Cara Kelola Data Provinsi</h4>
+                    <ul className="infos">
+                        <li>Klik tombol Tambah Provinsi untuk menambahkan Provinsi Baru</li>
+                        <li>Lakukan pencarian untuk mencari provinsi yang diinginkan</li>
+                        <li>Lakukan ubah atau hapus data pada kolom Aksi</li>
+                    </ul>
+                </div>
+            </div>
             <Datatable
                 rows={provinces}
                 columns={provinceColumns}

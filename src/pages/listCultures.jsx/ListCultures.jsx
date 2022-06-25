@@ -96,6 +96,17 @@ const ListCultures = () => {
 
     return (
         <div className="listCultures">
+            <div className="info">
+                <h1>Data Tari</h1>
+                <div className="box">
+                    <h4>Tata Cara Kelola Data Tari</h4>
+                    <ul className="infos">
+                        <li>Klik tombol Tambah Budaya untuk menambahkan Seni Tari Baru</li>
+                        <li>Lakukan pencarian dan penyaringan data untuk mencari seni tari yang diinginkan</li>
+                        <li>Lakukan ubah atau hapus data pada kolom Aksi</li>
+                    </ul>
+                </div>
+            </div>
             {isFetching ? (
                 <CircularProgress />
             ) : (
