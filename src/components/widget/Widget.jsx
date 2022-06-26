@@ -12,10 +12,6 @@ import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined
 const Widget = ({ type, value }) => {
     let data;
 
-    // temp
-    const amount = 100;
-    const diff = 20;
-
     switch (type) {
         case "user":
             data = {
@@ -23,6 +19,7 @@ const Widget = ({ type, value }) => {
                 isMoney: false,
                 link: "lihat semua tari",
                 icon: <CreditCardIcon className="icon" />,
+                path: "/cultures",
             };
             break;
         case "order":
@@ -31,14 +28,16 @@ const Widget = ({ type, value }) => {
                 isMoney: true,
                 link: "lihat semua provinsi",
                 icon: <StoreIcon className="icon" />,
+                path: "/provinces",
             };
             break;
         case "products":
             data = {
-                title: "ADMIN",
+                title: "Pengguna",
                 isMoney: false,
-                link: "lihat semua admin",
+                link: "lihat semua pengguna",
                 icon: <PersonOutlineOutlinedIcon className="icon" />,
+                path: "/users",
             };
             break;
         case "delivery":

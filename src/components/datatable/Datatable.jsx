@@ -148,7 +148,23 @@ const Datatable = ({ rows, columns, handleDelete }) => {
                     </div>
                 </Link>
             </div>
+            
             <DataGrid
+                 sx={{
+                    boxShadow: 2,
+                    backgroundColor:"rgb(255, 245, 245)",
+                    '.MuiDataGrid-columnSeparator': {
+                        display: 'none',
+                      },
+                      '&.MuiDataGrid-root': {
+                        border: 'none',
+                      },
+                    // border: 2,
+                    // borderColor: '#F8545E',
+                    // '& .MuiDataGrid-cell:hover': {
+                    //   color: '#F8545E',
+                    // },
+                  }}
                 className="datagrid"
                 getRowId={(row) => row._id}
                 rows={list}

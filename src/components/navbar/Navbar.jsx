@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="wrapper">
             <div className="itemDark">
-                <DarkModeOutlinedIcon className="icon" />
+                {/* <DarkModeOutlinedIcon className="icon" /> */}
             </div>
                 {/* <div className="search">
                     <input type="text" placeholder="Search..." />
@@ -26,11 +26,6 @@ const Navbar = () => {
                             className="avatar"
                         />
                     </div>
-                    <Link to="/" style={{ textDecoration: "none" }}>
-                        <div className="item">
-                            <MenuRoundedIcon />
-                        </div>
-                    </Link>
                 </div>
             </div>
         </div>
