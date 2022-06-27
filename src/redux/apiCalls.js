@@ -138,11 +138,11 @@ export const addCulture = async (culture, toast, setIsSubmitting) => {
         console.log(res.data);
         console.log("SUKSES");
         setIsSubmitting(false);
-        toast.success("Permainan Berhasil Dibuat");
+        toast.success("Data Tari Berhasil Ditambahkan");
     } catch (err) {
         console.log(err);
         setIsSubmitting(false);
-        toast.error("Permainan Gagal Dibuat");
+        toast.error("Data Tari Gagal Ditambahkan");
     }
 };
 

@@ -175,7 +175,7 @@ const AddCulture = () => {
             imgs: uris,
             video: video.filter(Boolean),
         };
-        console.log(culture);
+        // console.log(culture);
         addCulture(culture, toast, setIsSubmitting);
     };
 
@@ -183,14 +183,14 @@ const AddCulture = () => {
         <div className="addCulture">
             <Formik
                 initialValues={{
-                    culturename: "",
+                    name: "",
                     year: null,
                     reg_num: "",
                     desc: "",
                     province: "",
                 }}
                 validationSchema={Yup.object({
-                    culturename: Yup.string().required("Harus diisi"),
+                    name: Yup.string().required("Harus diisi"),
                     province: Yup.string().required("Harus diisi"),
                 })}
                 onSubmit={(values) => {
@@ -202,7 +202,7 @@ const AddCulture = () => {
                     <TextField
                         label="Nama Seni Tari"
                         type="text"
-                        name="culturename"
+                        name="name"
                         placeholder="Tari Jaipong"
                     />
                     <SelectField

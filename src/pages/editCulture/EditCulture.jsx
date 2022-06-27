@@ -211,14 +211,14 @@ const EditCulture = () => {
         <div className="editCulture">
             <Formik
                 initialValues={{
-                    culturename: culture.culturename,
+                    name: culture.name,
                     year: culture.year,
                     reg_num: culture.reg_num,
                     desc: culture.desc,
                 }}
                 enableReinitialize
                 validationSchema={Yup.object({
-                    culturename: Yup.string().required("Harus diisi"),
+                    name: Yup.string().required("Wajib diisi"),
                 })}
                 onSubmit={(values) => {
                     setIsSubmitting(true);
@@ -229,7 +229,7 @@ const EditCulture = () => {
                     <TextField
                         label="Nama Tari"
                         type="text"
-                        name="culturename"
+                        name="name"
                         placeholder="Tari Jaipong"
                     />
                     <FieldSelected
