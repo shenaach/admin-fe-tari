@@ -5,7 +5,9 @@ export const culturesSlice = createSlice({
     initialState: {
         cultures: [],
         isFetching: false,
+        isFetchingDelete: false,
         error: false,
+        errorDelete: false,
     },
     reducers: {
         //GET ALL

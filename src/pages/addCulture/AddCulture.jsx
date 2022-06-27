@@ -22,10 +22,10 @@ import { useDispatch, useSelector } from "react-redux";
 
 const AddCulture = () => {
     const [image, setImage] = useState("");
-    const [url, setUrl] = useState("");
-    const [year, setYear] = useState("");
-    const [province, setProvince] = useState("");
-    const [urls, setUrls] = useState([]);
+    // const [url, setUrl] = useState("");
+    // const [year, setYear] = useState("");
+    // const [province, setProvince] = useState("");
+    // const [urls, setUrls] = useState([]);
     const [video, setVideo] = useState([]);
     const [images, setImages] = useState([]);
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -41,7 +41,7 @@ const AddCulture = () => {
         setVideo(e.target.value.split(","));
     };
 
-    console.log(video);
+    // console.log(video);
 
     const handleUpload = () => {
         return new Promise((resolve, reject) => {
@@ -190,8 +190,8 @@ const AddCulture = () => {
                     province: "",
                 }}
                 validationSchema={Yup.object({
-                    name: Yup.string().required("Harus diisi"),
-                    province: Yup.string().required("Harus diisi"),
+                    name: Yup.string().required("Nama Seni Tari tidak boleh kosong"),
+                    province: Yup.string().required("Provinsi tidak boleh kosong"),
                 })}
                 onSubmit={(values) => {
                     setIsSubmitting(true);
