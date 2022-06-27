@@ -5,15 +5,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBKT9G6IA1HKBB6HQhhGI6NeDyPH-99WNo",
-    authDomain: "shop-e9075.firebaseapp.com",
-    projectId: "shop-e9075",
-    storageBucket: "shop-e9075.appspot.com",
-    messagingSenderId: "913229149688",
-    appId: "1:913229149688:web:a6fa4862121c6b9898120d",
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-export default app;
+    apiKey: "AIzaSyDcfRSj22bo_Y3jPTQylK61U5egph-X-MQ",
+    authDomain: "mymaps-e920d.firebaseapp.com",
+    projectId: "mymaps-e920d",
+    storageBucket: "mymaps-e920d.appspot.com",
+    messagingSenderId: "942354765745",
+    appId: "1:942354765745:web:5cc12b0efd01efa32bcf90"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
