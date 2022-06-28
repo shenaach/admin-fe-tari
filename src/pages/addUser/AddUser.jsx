@@ -15,7 +15,6 @@ const AddUser = () => {
             <Formik
                 initialValues={{
                     username: "",
-                    email:"",
                     password: "",
                     confirmPassword: "",
                 }}

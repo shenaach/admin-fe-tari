@@ -11,7 +11,7 @@ const SelectField = ({ options, label, ...props }) => {
     const { value } = meta;
     const { setValue } = helpers;
 
-    console.log(value);
+    // console.log(value);
 
     return (
         <FormControl

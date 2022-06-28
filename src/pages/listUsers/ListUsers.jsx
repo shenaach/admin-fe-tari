@@ -30,16 +30,6 @@ const ListUsers = () => {
                 return params.row.name;
             },
         },
-        {
-            field: "email",
-            headerName: "Email",
-            minWidth: 200,
-            flex: 1,
-
-            renderCell: (params) => {
-                return params.row.email;
-            },
-        },
     ];
 
     return (
