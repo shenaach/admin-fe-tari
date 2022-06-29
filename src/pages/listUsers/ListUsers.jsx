@@ -23,7 +23,7 @@ const ListUsers = () => {
         {
             field: "username",
             headerName: "Username",
-            minWidth: 200,
+            minWidth: 400,
             flex: 1,
 
             renderCell: (params) => {

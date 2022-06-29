@@ -29,7 +29,7 @@ import CustomFilter from "../../components/fields/customFilter/CustomFilter";
 import FieldSelected from "../../components/fields/fieldSelected/FieldSelected";
 
 const EditCulture = () => {
-    const [video, setVideo] = useState([]);
+    // const [video, setVideo] = useState([]);
     const [image, setImage] = useState("");
     const [images, setImages] = useState([]);
     const [imageUrl, setImageUrl] = useState("");
@@ -52,16 +52,17 @@ const EditCulture = () => {
 
     useEffect(() => {
         setProvince(culture.province?._id);
-        setVideo(culture.video);
+        // setVideo(culture.video);
         setImageUrl(culture.img);
         setImagesUrls(culture.imgs);
-    }, [culture.province, culture.video, culture.img, culture.imgs]);
+    }, [culture.province, culture.img, culture.imgs]);
+    // }, [culture.province, culture.video, culture.img, culture.imgs]);
 
     console.log(imagesUrls);
 
-    const handleVideos = (e) => {
-        setVideo(e.target.value.split(","));
-    };
+    // const handleVideos = (e) => {
+    //     setVideo(e.target.value.split(","));
+    // };
 
     const handleUpload = () => {
         return new Promise((resolve, reject) => {
@@ -197,7 +198,7 @@ const EditCulture = () => {
                 uris?.length < 1
                     ? imagesUrls
                     : [...imagesUrls, ...uris].filter(Boolean),
-            video: video.filter(Boolean),
+            // video: video.filter(Boolean),
             province:province,
         };
         console.log(input);
@@ -351,7 +352,7 @@ const EditCulture = () => {
                             </div>
                         )}
                     </div>
-                    <div className="input-video">
+                    {/* <div className="input-video">
                         <label htmlFor="">Galeri Video</label>
                         <input
                             type="text"
@@ -363,9 +364,9 @@ const EditCulture = () => {
                             Link berupa link embed ex:
                             https://www.youtube.com/embed/WAuN5yVFkfQ
                         </p>
-                    </div>
+                    </div> */}
 
-                    {video?.length > 0 && (
+                    {/* {video?.length > 0 && (
                         <div className="videos-container">
                             {video?.filter(Boolean).map((video) => (
                                 <iframe
@@ -375,7 +376,7 @@ const EditCulture = () => {
                                 ></iframe>
                             ))}
                         </div>
-                    )}
+                    )} */}
 
                     <button type="submit" disabled={isSubmitting}>
                         {isSubmitting ? (

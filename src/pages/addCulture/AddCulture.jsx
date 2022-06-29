@@ -26,7 +26,7 @@ const AddCulture = () => {
     // const [year, setYear] = useState("");
     // const [province, setProvince] = useState("");
     // const [urls, setUrls] = useState([]);
-    const [video, setVideo] = useState([]);
+    // const [video, setVideo] = useState([]);
     const [images, setImages] = useState([]);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -37,9 +37,9 @@ const AddCulture = () => {
         getProvinces(dispatch);
     }, []);
 
-    const handleVideos = (e) => {
-        setVideo(e.target.value.split(","));
-    };
+    // const handleVideos = (e) => {
+    //     setVideo(e.target.value.split(","));
+    // };
 
     // console.log(video);
 
@@ -173,7 +173,7 @@ const AddCulture = () => {
             ...values,
             img: uri,
             imgs: uris,
-            video: video.filter(Boolean),
+            // video: video.filter(Boolean),
         };
         // console.log(culture);
         addCulture(culture, toast, setIsSubmitting);
@@ -294,7 +294,7 @@ const AddCulture = () => {
                             </div>
                         )}
                     </div>
-                    <div className="input-video">
+                    {/* <div className="input-video">
                         <label htmlFor="">Video Tari</label>
                         <input
                             type="text"
@@ -305,9 +305,9 @@ const AddCulture = () => {
                             Link berupa link embed ex:
                             https://www.youtube.com/embed/WAuN5yVFkfQ
                         </p>
-                    </div>
+                    </div> */}
 
-                    {video.length > 0 && (
+                    {/* {video.length > 0 && (
                         <div className="videos-container">
                             {video.filter(Boolean).map((video) => (
                                 <iframe
@@ -317,7 +317,7 @@ const AddCulture = () => {
                                 ></iframe>
                             ))}
                         </div>
-                    )}
+                    )} */}
 
                     <button type="submit" disabled={isSubmitting}>
                         {isSubmitting ? (

@@ -52,13 +52,6 @@ const AddUser = () => {
                     />
 
                     <TextField
-                        label="Email"
-                        type="text"
-                        name="email"
-                        placeholder="admin@gmail.com"
-                    />
-
-                    <TextField
                         label="Password"
                         type="text"
                         name="password"

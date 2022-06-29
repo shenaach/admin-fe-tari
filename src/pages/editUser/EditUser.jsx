@@ -123,12 +123,6 @@ const EditUser = () => {
                         placeholder="admin123"
                     />
                     <FormObserver />
-                    <TextField
-                        label="Email"
-                        type="text"
-                        name="email"
-                        placeholder="admin@gmail.com"
-                    />
 
                     <TextField
                         label="Password Baru"
