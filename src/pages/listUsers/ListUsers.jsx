@@ -33,7 +33,18 @@ const ListUsers = () => {
     ];
 
     return (
-        <div className="listProvince">
+        <div className="listUsers">
+            <div className="info">
+                <h1>Pengguna</h1>
+                <div className="box">
+                    <h4>Tata Cara Kelola Data Pengguna</h4>
+                    <ul className="infos">
+                        <li>Klik tombol Tambah Pengguna untuk menambahkan admin baru</li>
+                        <li>Lakukan pencarian data untuk mencari admin</li>
+                        <li>Lakukan ubah atau hapus data pada kolom Aksi</li>
+                    </ul>
+                </div>
+            </div>
             <Datatable
                 rows={users}
                 columns={provinceColumns}
