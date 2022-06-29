@@ -106,39 +106,39 @@
         }
     }
 
-    .input-video {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+    // .input-video {
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 5px;
 
-        label {}
+    //     label {}
 
-        .icon {
-            cursor: pointer;
-        }
+    //     .icon {
+    //         cursor: pointer;
+    //     }
 
-        input {
-            margin: 5px 0;
-            padding: 10px;
-            outline: 0.5px solid lightgray;
-            border-style: none;
-            border-radius: 5px;
+    //     input {
+    //         margin: 5px 0;
+    //         padding: 10px;
+    //         outline: 0.5px solid lightgray;
+    //         border-style: none;
+    //         border-radius: 5px;
 
-            &:hover {
-                outline: 1px solid black;
-            }
+    //         &:hover {
+    //             outline: 1px solid black;
+    //         }
 
-            &:focus {
-                outline: 2px solid #F8545E;
+    //         &:focus {
+    //             outline: 2px solid #F8545E;
 
-            }
-        }
+    //         }
+    //     }
 
-        p {
-            font-size: 0.8rem;
-            color: #888;
-        }
-    }
+    //     p {
+    //         font-size: 0.8rem;
+    //         color: #888;
+    //     }
+    // }
 
     .videos-container {
         display: flex;

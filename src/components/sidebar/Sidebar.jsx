@@ -8,6 +8,7 @@ import CreditCardIcon from "@mui/icons-material/CreditCard";
 import StoreIcon from "@mui/icons-material/Store";
 import { Link } from "react-router-dom";
 import { logout } from "../../redux/userRedux";
+import StickyBox from "react-sticky-box";
 
 const Sidebar = () => {
     const dispatch = useDispatch();
@@ -51,6 +52,7 @@ const Sidebar = () => {
 
     return (
         <div className="sidebar">
+            <StickyBox>
             <div className="top">
                 <Link to="/" style={{ textDecoration: "none" }}>
                     <span className="logo">Maps-Admin</span>
@@ -83,6 +85,7 @@ const Sidebar = () => {
                     ))}
                 </ul>
             </div>
+            </StickyBox>
         </div>
     );
 };

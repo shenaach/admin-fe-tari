@@ -11,9 +11,9 @@ import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined
 
 const Widget = ({ type, value }) => {
     let data;
-
+    
     switch (type) {
-        case "user":
+        case "cultures":
             data = {
                 title: "Data Tari",
                 isMoney: false,
@@ -22,7 +22,7 @@ const Widget = ({ type, value }) => {
                 path: "/cultures",
             };
             break;
-        case "order":
+        case "provinces":
             data = {
                 title: "Data Provinsi",
                 isMoney: true,
@@ -31,21 +31,13 @@ const Widget = ({ type, value }) => {
                 path: "/provinces",
             };
             break;
-        case "products":
+        case "users":
             data = {
                 title: "Pengguna",
                 isMoney: false,
                 link: "lihat semua pengguna",
                 icon: <PersonOutlineOutlinedIcon className="icon" />,
                 path: "/users",
-            };
-            break;
-        case "delivery":
-            data = {
-                title: "DELIVERIES",
-                isMoney: true,
-                link: "see all deliveries",
-                icon: <LocalShippingOutlinedIcon className="icon" />,
             };
             break;
         default:
@@ -57,7 +49,9 @@ const Widget = ({ type, value }) => {
             <div className="left">
                 <span className="title">{data.title}</span>
                 <span className="counter">{value}</span>
-                <span className="link">{data.link}</span>
+                <span className="link">
+                    <a href={data.path}>{data.link} </a>
+                </span>
             </div>
             <div className="right">
                 {/* <div className="percentage positive">

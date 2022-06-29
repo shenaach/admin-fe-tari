@@ -204,14 +204,14 @@ export const addProvince = async (province, toast, setIsSubmitting) => {
 };
 export const addUser = async (input, toast, setIsSubmitting) => {
     try {
-        const res = await userRequest.post(`/auth/register`, input);
-        console.log(res.data);
-        console.log("SUKSES");
-        setIsSubmitting(false);
-        toast.success("User Berhasil Dibuat");
+      const res = await userRequest.post(`/auth/register`, input);
+      console.log(res.data);
+      console.log("SUKSES");
+      setIsSubmitting(false);
+      toast.success("User Berhasil Dibuat");
     } catch (err) {
-        console.log(err);
-        setIsSubmitting(false);
-        toast.error("User Gagal Dibuat");
+      console.log(err);
+      setIsSubmitting(false);
+      toast.error("User Gagal Dibuat");
     }
-};
+  };
