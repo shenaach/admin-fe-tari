@@ -107,6 +107,10 @@ const ListCultures = () => {
                     </ul>
                 </div>
             </div>
+            {isFetching ? (
+                <CircularProgress />
+            ) : (
+                <>
                     <Datatable
                         rows={cultures}
                         columns={cultureColumns}
@@ -123,6 +127,7 @@ const ListCultures = () => {
                         draggable
                         pauseOnHover
                     />
+                </>
             )}
         </div>
     );
