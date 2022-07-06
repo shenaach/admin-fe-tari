@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import "./list.scss";
 import ListUsers from "../listUsers/ListUsers";
 import { pathName, setDataPage } from "../../utils/naming";
-import ListCultures from "../listCultures.jsx/ListCultures";
+import ListCultures from "../listCultures/ListCultures";
 
 const List = () => {
     // const location = useLocation();

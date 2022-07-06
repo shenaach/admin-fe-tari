@@ -16,7 +16,7 @@
         .logo {
             font-size: 18px;
             font-weight: bold;
-            color: #F8545E;
+            color: teal;
         }
     }
 
@@ -45,7 +45,8 @@
 
 
             #active {
-                background-color: rgb(247, 235, 243);
+                background-color: rgb(238, 252, 249);
+                // background-color: rgb(247, 235, 243);
             }
 
             li {
@@ -58,12 +59,13 @@
 
 
                 &:hover {
-                    background-color: rgb(247, 235, 243);
+                    background-color: rgb(238, 252, 249);
+                    // background-color: rgb(247, 235, 243);
                 }
 
                 .icon {
                     font-size: 18px;
-                    color: #F8545E;
+                    color: teal;
                 }
 
                 span {

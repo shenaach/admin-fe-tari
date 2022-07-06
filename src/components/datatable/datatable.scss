@@ -42,11 +42,11 @@
                 }
 
                 .reset {
-                    color: #F8545E;
+                    color: teal;
                     cursor: pointer;
 
                     &:hover {
-                        color: #F8545E;
+                        color: teal;
                     }
 
                 }
@@ -81,12 +81,13 @@
         }
 
         .addButton {
-            padding: 5px 10px;
+            padding: 10px;
             font-size: 0.9rem;
             color: white;
             border-radius: 5px;
             border-style: none;
-            background-color: #F8545E;
+            // background-color: #F8545E;
+            background-color: #38B2AC;
             font-weight: 600;
             margin: 5px 0;
             cursor: pointer;
@@ -95,7 +96,8 @@
             justify-content: space-between;
 
             &:hover {
-                background-color: #F8545E;
+                background-color: #38B2AC;
+                // background-color: #F8545E;
             }
         }
 
@@ -121,7 +123,8 @@
 
         &.active {
             background-color: rgba(0, 128, 0, 0.05);
-            color: #F8545E;
+            color: #38B2AC;
+            // color: #F8545E;
         }
 
         &.pending {

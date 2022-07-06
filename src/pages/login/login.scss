@@ -17,8 +17,8 @@
     .form-content-left {
         background: linear-gradient(
           90deg,
-          rgb(255, 98, 203) 0%,
-          rgb(247, 235, 243) 100%
+          #38B2AC 0%,
+          rgb(238, 252, 249) 100%
         );
         border-radius: 10px 0 0 10px;
         position: relative;
@@ -59,7 +59,7 @@
 
         h1 {
             margin: 5px 0;
-            color: #F8545E;
+            color: #38B2AC;
         }
 
         form {
@@ -90,7 +90,7 @@
                     }
 
                     &:focus {
-                        outline: 2px solid #F8545E;
+                        outline: 2px solid #38B2AC;
 
                     }
                 }
@@ -102,7 +102,7 @@
                 color: white;
                 border-radius: 5px;
                 border-style: none;
-                background-color: #F8545E;
+                background-color: #38B2AC;
                 font-weight: 600;
                 margin: 10px 0 5px 0;
                 cursor: pointer;
@@ -112,7 +112,7 @@
 
                 &:hover {
                     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.90);
-                    background-color: #F8545E;
+                    background-color: #38B2AC;
                 }
 
                 &:disabled {

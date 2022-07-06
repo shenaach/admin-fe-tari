@@ -15,8 +15,10 @@
                 align-items: center;
                 justify-content: center;
                 gap: 5px;
-                background-color: rgb(247, 235, 243);
-                color: #F8545E;
+                // background-color: rgb(247, 235, 243);
+                // color: #F8545E;
+                background-color: rgb(238, 252, 249);
+                color: teal;
                 padding: 8px;
                 cursor: pointer;
             }
@@ -85,7 +87,7 @@
         color: white;
         border-radius: 5px;
         border-style: none;
-        background-color: #F8545E;
+        background-color: teal;
         font-weight: 600;
         margin: 5px 0;
         cursor: pointer;
@@ -95,7 +97,7 @@
 
         &:hover {
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.20);
-            background-color: #F8545E;
+            background-color: teal;
             color: white;
         }
 
@@ -127,7 +129,7 @@
             }
 
             &:focus {
-                outline: 2px solid #F8545E;
+                outline: 2px solid teal;
 
             }
         }

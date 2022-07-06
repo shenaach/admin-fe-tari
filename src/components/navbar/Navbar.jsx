@@ -20,11 +20,11 @@ const Navbar = () => {
                 </div> */}
                 <div className="items">
                     <div className="item">
-                        <img
+                        {/* <img
                             src="https://sekolahutsman.sch.id/wp-content/uploads/2016/03/no-profile.png"
                             alt=""
                             className="avatar"
-                        />
+                        /> */}
                     </div>
                 </div>
             </div>

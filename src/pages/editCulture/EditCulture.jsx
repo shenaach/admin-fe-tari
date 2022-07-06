@@ -219,7 +219,7 @@ const EditCulture = () => {
                 }}
                 enableReinitialize
                 validationSchema={Yup.object({
-                    name: Yup.string().required("Wajib diisi"),
+                    name: Yup.string().required("Nama Tari tidak boleh kosong"),
                 })}
                 onSubmit={(values) => {
                     setIsSubmitting(true);

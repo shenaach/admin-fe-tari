@@ -20,6 +20,7 @@ const Datatable = ({ rows, columns, handleDelete }) => {
     const [deleteVal, setDeleteVal] = useState({});
     const [province, setProvince] = useState("");
     const [year, setYear] = useState("");
+    const [pageSize, setPageSize] = useState(9);
 
     const dispatch = useDispatch();
     const { provinces } = useSelector((state) => state.provinces);
@@ -152,7 +153,7 @@ const Datatable = ({ rows, columns, handleDelete }) => {
             <DataGrid
                  sx={{
                     boxShadow: 2,
-                    backgroundColor:"rgb(255, 245, 245)",
+                    backgroundColor: "#E6FFFA",
                     '.MuiDataGrid-columnSeparator': {
                         display: 'none',
                       },
@@ -169,10 +170,10 @@ const Datatable = ({ rows, columns, handleDelete }) => {
                 getRowId={(row) => row._id}
                 rows={list}
                 columns={columns.concat(actionColumn)}
-                pageSize={9}
-                rowsPerPageOptions={[9, 18, 20, 100]}
-                paginationMode="client"
-                checkboxSelection
+                pageSize={pageSize}
+                rowsPerPageOptions={[9, 20, 50, 100]}
+                onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
+                pagination
             />
             <ConfirmDialog
                 open={openConfirm}

@@ -31,7 +31,7 @@ const Login = () => {
     return (
         <div className="login">
         <div className='form-content-left'>
-          <img className='form-img' src='img/img-3.svg' alt='spaceship' />
+          <img className='form-img' src='img/img-4.svg' alt='spaceship' />
         </div>
             <div className="login-container">
                 <h1>Maps Admin</h1>

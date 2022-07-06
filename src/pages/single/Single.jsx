@@ -16,7 +16,7 @@ const Single = () => {
             <div className="newContainer">
                 <Navbar />
                 <div className="top">
-                    <h1>Edit {pathName()}</h1>
+                    <h1>Ubah {pathName()}</h1>
                 </div>
                 <div className="mid">
                     {setDataPage(

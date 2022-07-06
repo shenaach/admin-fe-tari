@@ -21,14 +21,14 @@ const AddProvince = () => {
                     geojson: "",
                 }}
                 validationSchema={Yup.object({
-                    name: Yup.string().required("Harus diisi"),
+                    name: Yup.string().required("Nama Provinsi tidak boleh kosong"),
                     lat: Yup.number()
-                        .typeError("Harus berupa angka")
-                        .required("Harus diisi"),
+                        .typeError("Latitude harus berupa angka")
+                        .required("Latitude tidak boleh kosong"),
                     long: Yup.number()
-                        .typeError("Harus berupa angka")
-                        .required("Harus diisi"),
-                    geojson: Yup.string().required("Harus diisi"),
+                        .typeError("Longitude harus berupa angka")
+                        .required("Longitude tidak boleh kosong"),
+                    geojson: Yup.string().required("GeoJSON tidak boleh kosong. Setidaknya masukkan { }"),
                 })}
                 onSubmit={(values) => {
                     setIsSubmitting(true);

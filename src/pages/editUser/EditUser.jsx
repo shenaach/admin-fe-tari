@@ -84,18 +84,18 @@ const EditUser = () => {
                     tes?.password
                         ? Yup.object({
                               username: Yup.string()
-                                  .required("Harus diisi")
+                                  .required("Username tidak boleh kosong")
                                   .max(15, "Username maksimal 15 karakter ")
                                   .min(6, "Username minimal 6 karakter "),
                               password: Yup.string()
-                                  .required("Harus diisi")
+                                  .required("Password tidak boleh kosong")
                                   .matches(
                                       /^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/,
                                       "Password Minimal 8 karakter, Satu huruf besar, Satu huruf kecil, Satu angka dan satu simbol"
                                   ),
                               confirmPassword: Yup.string()
-                                  .required("Harus diisi")
-                                  .required("Konfirmasi password harus diisi")
+                                  .required("Konfirmasi Password tidak boleh kosong")
+                                  .required("Konfirmasi Password tidak boleh kosong")
                                   .oneOf(
                                       [Yup.ref("password"), null],
                                       "Password harus sama"
@@ -103,7 +103,7 @@ const EditUser = () => {
                           })
                         : Yup.object({
                               username: Yup.string()
-                                  .required("Harus diisi")
+                                  .required("Username tidak boleh kosong")
                                   .max(15, "Username maksimal 15 karakter ")
                                   .min(6, "Username minimal 6 karakter "),
                           })

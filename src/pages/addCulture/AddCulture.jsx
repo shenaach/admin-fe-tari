@@ -191,6 +191,8 @@ const AddCulture = () => {
                 }}
                 validationSchema={Yup.object({
                     name: Yup.string().required("Nama Seni Tari tidak boleh kosong"),
+                    year: Yup.number()
+                        .typeError("Tahun registrasi minimal 2010 dan maksimal 2022"),
                     province: Yup.string().required("Provinsi tidak boleh kosong"),
                 })}
                 onSubmit={(values) => {
