@@ -220,6 +220,11 @@ const EditCulture = () => {
                 enableReinitialize
                 validationSchema={Yup.object({
                     name: Yup.string().required("Nama Tari tidak boleh kosong"),
+                    year: Yup.number()
+                        .typeError("Tahun tidak boleh kosong")
+                        .min(2010, "Tahun harus lebih besar dari atau sama dengan 2010")
+                        .max(2022, "Tahun melebihi dari tahun registrasi")
+                        .required("Tahun tidak boleh kosong"),
                 })}
                 onSubmit={(values) => {
                     setIsSubmitting(true);

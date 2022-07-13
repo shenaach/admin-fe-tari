@@ -179,6 +179,13 @@ const AddCulture = () => {
         addCulture(culture, toast, setIsSubmitting);
     };
 
+    // const date = new Date();
+    // const yearToday = date.getFullyear();
+    // const inputProps = [
+    //     {type:"text", placeholder:"jaipong"},
+    //     {type:"number", placeholder: yearToday, min:2010, max: yearToday}
+    // ];
+
     return (
         <div className="addCulture">
             <Formik
@@ -192,7 +199,10 @@ const AddCulture = () => {
                 validationSchema={Yup.object({
                     name: Yup.string().required("Nama Seni Tari tidak boleh kosong"),
                     year: Yup.number()
-                        .typeError("Tahun registrasi minimal 2010 dan maksimal 2022"),
+                        .typeError("Tahun tidak boleh kosong")
+                        .min(2010, "Tahun harus lebih besar dari atau sama dengan 2010")
+                        .max(2022, "Tahun melebihi dari tahun registrasi")
+                        .required("Tahun tidak boleh kosong"),
                     province: Yup.string().required("Provinsi tidak boleh kosong"),
                 })}
                 onSubmit={(values) => {
