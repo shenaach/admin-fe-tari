@@ -4,7 +4,7 @@ export const pathName = () => {
         {
             provinces: "Provinsi",
             cultures: "Tari",
-            users: "Pengguna",
+            users: "Admin",
         }[path] || "Data"
     );
 };

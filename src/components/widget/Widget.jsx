@@ -33,9 +33,9 @@ const Widget = ({ type, value }) => {
             break;
         case "users":
             data = {
-                title: "Pengguna",
+                title: "Admin",
                 isMoney: false,
-                link: "lihat semua pengguna",
+                link: "lihat semua admin",
                 icon: <PersonOutlineOutlinedIcon className="icon" />,
                 path: "/users",
             };

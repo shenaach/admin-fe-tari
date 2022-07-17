@@ -35,11 +35,11 @@ const ListUsers = () => {
     return (
         <div className="listUsers">
             <div className="info">
-                <h1>Pengguna</h1>
+                <h1>Data Admin</h1>
                 <div className="box">
-                    <h4>Tata Cara Kelola Data Pengguna</h4>
+                    <h4>Tata Cara Kelola Data Admin</h4>
                     <ul className="infos">
-                        <li>Klik tombol Tambah Pengguna untuk menambahkan admin baru</li>
+                        <li>Klik tombol Tambah Admin untuk menambahkan admin baru</li>
                         <li>Lakukan pencarian data untuk mencari admin</li>
                         <li>Lakukan ubah atau hapus data pada kolom Aksi</li>
                     </ul>

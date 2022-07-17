@@ -38,7 +38,7 @@ const Sidebar = () => {
         },
         {
             id: 4,
-            title: "Pengguna",
+            title: "Admin",
             icon: <PersonOutlineOutlinedIcon className="icon" />,
             path: "/users",
         },
