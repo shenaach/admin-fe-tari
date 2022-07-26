@@ -17,11 +17,9 @@ const ListProvince = () => {
 
     const handleDelete = (id) => {
         deleteProvince(id, dispatch, toast);
-        console.log(id);
     };
 
     const provinceColumns = [
-        { field: "_id", headerName: "ID", minWidth: 100, flex: 1 },
         {
             field: "name",
             headerName: "Nama Provinsi",
