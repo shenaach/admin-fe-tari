@@ -12,19 +12,9 @@ const Navbar = () => {
         <div className="navbar">
             <div className="wrapper">
             <div className="itemDark">
-                {/* <DarkModeOutlinedIcon className="icon" /> */}
             </div>
-                {/* <div className="search">
-                    <input type="text" placeholder="Search..." />
-                    <SearchOutlinedIcon />
-                </div> */}
                 <div className="items">
                     <div className="item">
-                        {/* <img
-                            src="https://sekolahutsman.sch.id/wp-content/uploads/2016/03/no-profile.png"
-                            alt=""
-                            className="avatar"
-                        /> */}
                     </div>
                 </div>
             </div>

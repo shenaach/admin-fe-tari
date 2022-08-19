@@ -111,10 +111,6 @@ const Datatable = ({ rows, columns, handleDelete }) => {
                     </div>
                     {window.location.pathname === "/cultures" && (
                         <div className="filter-container">
-                            {/* <div className="filter-title">
-                                <FilterAltIcon />
-                                Filter :
-                            </div> */}
                             <CustomFilter
                                 options={provinces}
                                 label="Provinsi"
@@ -160,11 +156,6 @@ const Datatable = ({ rows, columns, handleDelete }) => {
                       '&.MuiDataGrid-root': {
                         border: 'none',
                       },
-                    // border: 2,
-                    // borderColor: '#F8545E',
-                    // '& .MuiDataGrid-cell:hover': {
-                    //   color: '#F8545E',
-                    // },
                   }}
                 className="datagrid"
                 getRowId={(row) => row._id}

@@ -29,7 +29,6 @@ import CustomFilter from "../../components/fields/customFilter/CustomFilter";
 import FieldSelected from "../../components/fields/fieldSelected/FieldSelected";
 
 const EditCulture = () => {
-    // const [video, setVideo] = useState([]);
     const [image, setImage] = useState("");
     const [images, setImages] = useState([]);
     const [imageUrl, setImageUrl] = useState("");
@@ -52,17 +51,12 @@ const EditCulture = () => {
 
     useEffect(() => {
         setProvince(culture.province?._id);
-        // setVideo(culture.video);
         setImageUrl(culture.img);
         setImagesUrls(culture.imgs);
     }, [culture.province, culture.img, culture.imgs]);
     // }, [culture.province, culture.video, culture.img, culture.imgs]);
 
     console.log(imagesUrls);
-
-    // const handleVideos = (e) => {
-    //     setVideo(e.target.value.split(","));
-    // };
 
     const handleUpload = () => {
         return new Promise((resolve, reject) => {
@@ -198,7 +192,6 @@ const EditCulture = () => {
                 uris?.length < 1
                     ? imagesUrls
                     : [...imagesUrls, ...uris].filter(Boolean),
-            // video: video.filter(Boolean),
             province:province,
         };
         console.log(input);
@@ -357,31 +350,6 @@ const EditCulture = () => {
                             </div>
                         )}
                     </div>
-                    {/* <div className="input-video">
-                        <label htmlFor="">Galeri Video</label>
-                        <input
-                            type="text"
-                            placeholder="Link1,https://www.youtube.com/embed/WAuN5yVFkfQ,Link3"
-                            value={video}
-                            onChange={handleVideos}
-                        />
-                        <p>
-                            Link berupa link embed ex:
-                            https://www.youtube.com/embed/WAuN5yVFkfQ
-                        </p>
-                    </div> */}
-
-                    {/* {video?.length > 0 && (
-                        <div className="videos-container">
-                            {video?.filter(Boolean).map((video) => (
-                                <iframe
-                                    width="320"
-                                    height="215"
-                                    src={video}
-                                ></iframe>
-                            ))}
-                        </div>
-                    )} */}
 
                     <button type="submit" disabled={isSubmitting}>
                         {isSubmitting ? (

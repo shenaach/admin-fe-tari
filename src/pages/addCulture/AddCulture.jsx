@@ -22,11 +22,6 @@ import { useDispatch, useSelector } from "react-redux";
 
 const AddCulture = () => {
     const [image, setImage] = useState("");
-    // const [url, setUrl] = useState("");
-    // const [year, setYear] = useState("");
-    // const [province, setProvince] = useState("");
-    // const [urls, setUrls] = useState([]);
-    // const [video, setVideo] = useState([]);
     const [images, setImages] = useState([]);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -36,12 +31,6 @@ const AddCulture = () => {
     useEffect(() => {
         getProvinces(dispatch);
     }, []);
-
-    // const handleVideos = (e) => {
-    //     setVideo(e.target.value.split(","));
-    // };
-
-    // console.log(video);
 
     const handleUpload = () => {
         return new Promise((resolve, reject) => {
@@ -173,7 +162,6 @@ const AddCulture = () => {
             ...values,
             img: uri,
             imgs: uris,
-            // video: video.filter(Boolean),
         };
         // console.log(culture);
         addCulture(culture, toast, setIsSubmitting);
@@ -306,30 +294,6 @@ const AddCulture = () => {
                             </div>
                         )}
                     </div>
-                    {/* <div className="input-video">
-                        <label htmlFor="">Video Tari</label>
-                        <input
-                            type="text"
-                            placeholder="Link1,https://www.youtube.com/embed/WAuN5yVFkfQ,Link3"
-                            onChange={handleVideos}
-                        />
-                        <p>
-                            Link berupa link embed ex:
-                            https://www.youtube.com/embed/WAuN5yVFkfQ
-                        </p>
-                    </div> */}
-
-                    {/* {video.length > 0 && (
-                        <div className="videos-container">
-                            {video.filter(Boolean).map((video) => (
-                                <iframe
-                                    width="320"
-                                    height="215"
-                                    src={video}
-                                ></iframe>
-                            ))}
-                        </div>
-                    )} */}
 
                     <button type="submit" disabled={isSubmitting}>
                         {isSubmitting ? (

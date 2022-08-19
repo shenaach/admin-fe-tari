@@ -1,13 +1,9 @@
 import React from "react";
 import "./widget.scss";
-// import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
-// import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-// import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import StoreIcon from "@mui/icons-material/Store";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
-// import LocalFloristOutlinedIcon from "@mui/icons-material/LocalFloristOutlined";
 
 const Widget = ({ type, value }) => {
     let data;
@@ -54,9 +50,6 @@ const Widget = ({ type, value }) => {
                 </span>
             </div>
             <div className="right">
-                {/* <div className="percentage positive">
-                    <ArrowUpwardOutlinedIcon /> {diff}%
-                </div> */}
                 {data.icon}
             </div>
         </div>
